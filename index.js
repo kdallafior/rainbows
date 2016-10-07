@@ -1,8 +1,14 @@
 var colors = require('colors');
 
+var myString = 'Hello World';
 
-// console.log('OMG Rainbows!'.rainbow); // rainbow
-console.log('OMG Rainbows!'.cyan); // rainbow
-console.log('OMG Rainbows!'.blue); // rainbow
-console.log('OMG Rainbows!'.red); // rainbow
-console.log('OMG Rainbows!'.yellow); // rainbow
+function runInterval() {
+
+console.log(myString);
+console.log(myString.cyan); // cyan
+console.log(myString.blue); // blue
+console.log(myString.red); // red
+console.log(myString.yellow); // yellow
+}
+
+setInterval(runInterval, 5000);
