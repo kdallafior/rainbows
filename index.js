@@ -1,14 +1,15 @@
 var colors = require('colors');
 
-var myString = 'Hello World';
+// var colors = 'Hello World';
 
-function makeRainbows() {
-
-console.log(myString.white); // white
-console.log(myString.cyan); // cyan
-console.log(myString.blue); // blue
-console.log(myString.red); // red
-console.log(myString.yellow); // yellow
+function makeRainbows(string) {
+    console.log(colors.white(string));
+    console.log(colors.cyan(string));
+    console.log(colors.blue(string));
+    console.log(colors.red(string));
+    console.log(colors.yellow(string));
 }
 
-setInterval(makeRainbows, 1000);
+  for (var i = 2; i < process.argv.length; i++) {
+    setInterval(makeRainbows, 1000, process.argv[i]);
+}
